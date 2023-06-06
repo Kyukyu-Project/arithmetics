@@ -1,0 +1,20 @@
+{
+  "name": "arithmetic-parser",
+  "version": "0.1.0",
+  "description": "PEG solver parsing and evaluating simple arithmetics",
+  "main": "dist/parse.js",
+  "type": "module",
+  "scripts": {
+    "build": "node node_modules/peggy/bin/peggy.js --format es -o ./dist/arithmetic-parser.js src/grammar.pegjs",
+    "cli": "node dist/cli.js"
+  },
+  "author": "Kitsune",
+  "license": "MIT",
+  "dependencies": {
+    "peggy": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
